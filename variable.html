@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <p id="variable"></p>
- 
-    <script>
-        let x;
-        x = 600;
-        document.getElementById("variable").innerHTML = "Variable X is:" + x;
-    </script>
+   <p id="use_var"></p>
+   <p id="use_let"></p>
+   <p id="use_nothing"></p>
+
+   <script>
+        //use var
+        var x1 = 5;
+        var y1 = 6;
+        var z1 = x1 + y1;
+        document.getElementById("use_var").innerHTML = "The value of z using var variable is:" + z1;
+
+        //use Let
+        let x2 = 5;
+        let y2 = 6;
+        let z2 = x2 + y2;
+        document.getElementById("use_let").innerHTML = "The value of z using let variable is:" + z2;
+        
+        //Use Nothing
+        x3 = 5;
+        y3 = 6;
+        z3 = x3 + y3;
+        document.getElementById("use_nothing").innerHTML = "The value of z using nothing variable is:" + z3;
+   </script>
 </body>
 </html>
